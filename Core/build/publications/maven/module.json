@@ -1,0 +1,69 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.example.core",
+    "module": "core",
+    "version": "1.3.5",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "core-1.3.5.jar",
+          "url": "core-1.3.5.jar",
+          "size": 1281,
+          "sha512": "ff6c6bc1bc98c3a2b872638a84809a81585a0f9d6b9d3166fc0ca96e692814dba3919873466e58655632acf2f66bfcbf5227f15aeae29806e29eec9dd8eb1c34",
+          "sha256": "f8c0315fb1a16fdefef9973fdcfc625371c4a5dcf3c042c7ea6be883d18115b3",
+          "sha1": "44e1c203e0865363573cc9736386a5282ef12133",
+          "md5": "2785e93964b8302786ba3a85ffb95625"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.apache.commons",
+          "module": "commons-lang3",
+          "version": {
+            "requires": "3.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-1.3.5.jar",
+          "url": "core-1.3.5.jar",
+          "size": 1281,
+          "sha512": "ff6c6bc1bc98c3a2b872638a84809a81585a0f9d6b9d3166fc0ca96e692814dba3919873466e58655632acf2f66bfcbf5227f15aeae29806e29eec9dd8eb1c34",
+          "sha256": "f8c0315fb1a16fdefef9973fdcfc625371c4a5dcf3c042c7ea6be883d18115b3",
+          "sha1": "44e1c203e0865363573cc9736386a5282ef12133",
+          "md5": "2785e93964b8302786ba3a85ffb95625"
+        }
+      ]
+    }
+  ]
+}

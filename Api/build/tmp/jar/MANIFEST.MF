@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Implementation-Title: Api
+Main-Class: org.example.api
+Implementation-Version: 1.3.5
+

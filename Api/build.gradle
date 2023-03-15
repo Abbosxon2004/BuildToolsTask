@@ -43,4 +43,4 @@ test {
     useJUnitPlatform()
 }
 
-compileJava {}.dependsOn(':core:publishToMavenLocal')
+compileJava {}.dependsOn(':Core:publishToMavenLocal')

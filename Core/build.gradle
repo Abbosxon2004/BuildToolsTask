@@ -30,7 +30,7 @@ jar {
                 'Main-Class': 'org.example.core',
                 'Implementation-Version': '1.3.5'
         )
-        baseName 'core'
+        baseName 'Core'
     }
 }
 
@@ -38,6 +38,7 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
     implementation 'org.apache.commons:commons-lang3:3.10'
+
     implementation files('../Utils-1.3.5.jar')
 }
 

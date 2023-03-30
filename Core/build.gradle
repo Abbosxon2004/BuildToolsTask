@@ -1,49 +1,22 @@
 plugins {
     id 'java-library'
-    id 'maven-publish'
 }
+
 java {
-    sourceCompatibility = "1.8"
-}
-
-
-repositories {
-    mavenCentral()
-}
-
-publishing {
-    publications {
-        maven(MavenPublication) {
-            groupId  'org.example.core'
-            artifactId  'core'
-            version  '1.3.5'
-
-            from components.java
-        }
-    }
-}
-
-jar {
-    manifest {
-        attributes(
-                'Implementation-Title': 'Core',
-                'Main-Class': 'org.example.core',
-                'Implementation-Version': '1.3.5'
-        )
-        baseName 'Core'
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(8)
     }
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    testImplementation('org.junit.jupiter:junit-jupiter:5.8.1')
+    testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.8.1')
+
     implementation 'org.apache.commons:commons-lang3:3.10'
 
-    implementation files('../Utils-1.3.5.jar')
+    implementation files('../Utils-1.0-SNAPSHOT.jar')
 }
 
 test {
     useJUnitPlatform()
 }
-
-publishMavenPublicationToMavenLocal{}.mustRunAfter('build')
